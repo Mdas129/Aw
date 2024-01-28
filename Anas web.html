@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV By Anas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .search-input {
+            padding: 8px;
+            margin-right: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .search-button {
+            background-color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .channel {
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .channel img {
+            max-width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .corner-symbol {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+  <header>
+        <h1>Live TV</h1>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+        <button class="search-button" onclick="handleSearch()">Search</button>
+    </header>
+
+    <main>
+        <div class="channel" data-name="Star sports 1 tamil HD 1">
+            <a href="Starsports1 Tamil.html">
+                <h2>Star sports 1 tamil hd</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGTu88xW0ZHm7-rlWDdkMfRw0YMOBHTlnWRw&usqp=CAU" alt="Star sports 1 tamil">
+                <p>Star sports 1 tamil HD</p>
+            </a>
+        </div>
+
+        <div class="channel" data-name=" Sports 18 HD">
+            <a href="Sports 18 HD.html">
+                <h2>Sports 18 HD</h2>
+                <img src="https://tatalogo.pages.dev/1033.png" alt="Channel 2">
+                <p>Sports 18 HD </p>
+            </a>
+        </div>
+       
+              <div class="channel" data-name="Star sports 1 HD">
+            <a href="Star sports 1 HD.html">
+                <h2>Star sports 1 HD</h2>
+                <img src="https://tatalogo.pages.dev/78.png" alt="Channel 2">
+                <p>Star sports 1 Hd </p>
+            </a>
+        </div>
+      
+        <div class="channel" data-name="Star sports 2 HD">
+            <a href="Star sports 2 HD.html">
+                <h2>Star sports 2 Hd</h2>
+                <img src="https://tatalogo.pages.dev/235.png" alt="Channel 2">
+                <p>Star sports 2 Hd </p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Colours HD">
+            <a href="colours HD.html">
+                <h2>Colours HD</h2>
+                <img src="https://tatalogo.pages.dev/52.png" alt="Channel 2">
+                <p>Colours HD </p>
+            </a>
+        </div>
+      
+       <div class="channel" data-name="Star sports 1 SD">
+            <a href="Sp 1 sd.html">
+                <h2>Star sports 1 SD</h2>
+                <img src="https://tatalogo.pages.dev/78.png" alt="Channel 2">
+                <p>Star sports 1 SD </p>
+            </a>
+        </div>
+       
+       <div class="channel" data-name="Sun tv SD">
+            <a href="Sun tv SD.html">
+                <h2>Sun tv SD</h2>
+                <img src="https://tatalogo.pages.dev/521.png" alt="Channel 2">
+                <p> Sun tv SD </p>
+            </a>
+        </div>
+      
+       <div class="channel" data-name="Flowers tv">
+            <a href="Flowers tv.html">
+                <h2> Flowers tv</h2>
+                <img src="https://tatalogo.pages.dev/10.png" alt="Channel 2">
+                <p> Flowers tv</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Chutti tv">
+            <a href="chutti tv.html">
+                <h2> Chutti tv</h2>
+                <img src="https://te.legra.ph/file/6b8910e5b6c88b0bcfb1e.jpg" alt="Channel 2">
+                <p> Chutti tv</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Sun news">
+            <a href="Sun news.html">
+                <h2> Sun news</h2>
+                <img src="https://i.imgur.com/mQWpBdv.png" alt="Channel 2">
+                <p> Sun news</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Disney channel">
+            <a href="Disney.html">
+                <h2> Disney channel</h2>
+                <img src="https://tatalogo.pages.dev/114.png" alt="Channel 2">
+                <p> Disney channel</p>
+            </a>
+      </div>
+      
+      <div class="channel" data-name="zee thirai">
+            <a href="ZeethiraiHD.html">
+                <h2>zee thirai HD</h2>
+                <img src="https://tatalogo.pages.dev/797.png" alt="Channel 2">
+                <p> zee thirai HD</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="pogo">
+            <a href="Pogo.html">
+                <h2>Pogo</h2>
+                <img src="https://tatalogo.pages.dev/239.png" alt="Channel 2">
+                <p>Pogo</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="zee tamil">
+            <a href="Zee tamil hd.html">
+                <h2> Zee tamil HD</h2>
+                <img src="https://tatalogo.pages.dev/608.png" alt="Channel 2">
+                <p> Zee tamil HD</p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Star vijay HD">
+            <a href="vijaytv.html">
+                <h2>Star vijay HD</h2>
+                <img src="https://tatalogo.pages.dev/496.png" alt="Channel 2">
+                <p> Star vijay HD </p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Sun tv HD">
+            <a href="Suntv.html">
+                <h2>Sun tv HD</h2>
+                <img src="https://tatalogo.pages.dev/521.png" alt="Channel 2">
+                <p> Sun tv HD </p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Cartoon network">
+            <a href="Cartoon.html">
+                <h2>Cartoon network</h2>
+                <img src="https://tatalogo.pages.dev/238.png" alt="Channel 2">
+                <p> Cartoon network </p>
+            </a>
+        </div>
+      
+      <div class="channel" data-name="Cartoon network">
+            <a href="Dis.html">
+                <h2>Discovery Kids</h2>
+                <img src="https://tatalogo.pages.dev/119.png" alt="Channel 2">
+                <p>Discovery Kids All language </p>
+            </a>
+        </div>
+        <!-- Add more channels as needed -->
+
+    </main>
+  
+  <script>
+        function handleSearch() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var channels = document.querySelectorAll('.channel');
+
+            channels.forEach(function(channel) {
+                var channelName = channel.getAttribute('data-name').toLowerCase();
+                var channelDisplay = channelName.includes(input) ? 'block' : 'none';
+                channel.style.display = channelDisplay;
+            });
+        }
+    </script>
+</body>
+</html>
